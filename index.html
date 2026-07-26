@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="D7460N" />
+  <meta name="description" content="CSS.live" />
+  <meta name="robots" content="index, archive" />
+  <meta name="color-scheme" content="dark light" />
+  <link rel="canonical" href="https://CSS.live" />
+  <link rel="icon" type="image/svg+xml" href="./assets/images/brand/logo.svg" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/color-scheme.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/color-theme-66ccff.css" />
+  <!-- TEST (temporary): themes.css commented out to verify the color-scheme.css system-color fallback in light/dark.
+       SUPERSEDED by color-theme-66ccff.css above (Phase-2 of the modular color system); themes.css kept for reference.
+  <link rel="stylesheet" type="text/css" href="./assets/css/themes.css" />
+  -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/layout.css" />
+  <!-- TEST (temporary): transitions.css commented out for a clean light/dark demonstration.
+  <link rel="stylesheet" type="text/css" href="./assets/css/transitions.css" />
+  -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/inputs.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/media.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/typography.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/scrolling.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/a11y.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/forms.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/fallbacks.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/loading.css" />
+  <title>CSS.live</title>
+</head>
+
+<body>
+  <app-container>
+    <app-banner>CSS.live</app-banner>
+    <header>
+      <app-logo></app-logo>
+      <label>
+        Layouts
+        <input type="checkbox" checked />
+      </label>
+      <label aria-label="Light color scheme">
+        &#9788; Light
+        <input type="radio" aria-hidden="true" name="color-scheme" value="light" />
+      </label>
+      <label aria-label="Dark color scheme">
+        &#9790; Dark
+        <input type="radio" aria-hidden="true" name="color-scheme" value="dark" />
+      </label>
+      <label aria-label="System color scheme">
+        &#9680; System
+        <input type="radio" aria-hidden="true" name="color-scheme" value="system" checked />
+      </label>
+    </header>
+    <nav>
+      <details open>
+        <summary></summary>
+        <section>
+          <label><input type="radio" aria-hidden="true" name="nav" value="manage" /></label>
+          <label><input type="radio" aria-hidden="true" name="nav" value="faqs" /></label>
+        </section>
+      </details>
+      <details open>
+        <summary></summary>
+        <section>
+          <label><input type="radio" aria-hidden="true" name="nav" value="api-registration" /></label>
+          <label><input type="radio" aria-hidden="true" name="nav" value="audit" /></label>
+          <label><input type="radio" aria-hidden="true" name="nav" value="option-set" /></label>
+          <label><input type="radio" aria-hidden="true" name="nav" value="option-types" /></label>
+          <label><input type="radio" aria-hidden="true" name="nav" value="scope-type" /></label>
+          <label><input type="radio" aria-hidden="true" name="nav" value="server-types" /></label>
+          <label><input type="radio" aria-hidden="true" name="nav" value="servers" /></label>
+          <label><input type="radio" aria-hidden="true" name="nav" value="credentials" /></label>
+          <label><input type="radio" aria-hidden="true" name="nav" value="variables" /></label>
+          <label><input type="radio" aria-hidden="true" name="nav" value="settings" /></label>
+        </section>
+      </details>
+    </nav>
+    <main>
+      <article>
+        <h1></h1>
+        <p></p>
+        <section></section>
+        <label role="button" aria-label="Add new item">
+          <input type="checkbox" />
+          New Item
+          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" />
+            <path d="M12 8v8m-4-4h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </label>
+        <hr />
+        <input type="search" placeholder="Filter by name..." name="filter" />
+        <ul aria-hidden="true">
+          <li></li>
+        </ul>
+        <ul></ul>
+      </article>
+    </main>
+    <aside>
+      <h2 aria-live="polite">DETAILS</h2>
+      <label role="button" aria-label="Close">
+        <input type="checkbox" />
+        &#10006;
+      </label>
+      <form>
+        <fieldset></fieldset>
+        <p aria-live="polite"></p>
+        <small>Note: Ensure all fields are filled correctly before submitting.</small>
+        <small>Note: All fields marked with * are required.</small>
+        <label role="button" aria-label="Delete">
+          Delete
+          <input type="checkbox" />
+        </label>
+        <label role="button" aria-label="Reset">
+          Reset
+          <input type="checkbox" />
+        </label>
+        <label role="button" aria-label="Save">
+          Save
+          <input type="checkbox" />
+        </label>
+      </form>
+    </aside>
+    <footer>
+      <app-legal></app-legal>
+      <app-version></app-version>
+    </footer>
+    <app-banner></app-banner>
+  </app-container>
+  <!-- Content-level element pool (inert): non-tabular records clone real
+       semantic elements from here by tag name; see inject.injectContentBlocks. -->
+  <template><h1></h1><h2></h2><h3></h3><p></p><blockquote></blockquote></template>
+  <script type="module" src="./assets/js/app.js"></script>
+</body>
+
+</html>
